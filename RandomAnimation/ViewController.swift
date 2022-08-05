@@ -34,8 +34,8 @@ class ViewController: UIViewController {
         
         animationView.curve =
         "\(AnimationCurve.allCases.randomElement() ?? AnimationCurve.easeInCirc)"
-        animationView.force = CGFloat.random(in: 0.1...2.0)
-        animationView.duration = CGFloat.random(in: 0.1...3.0)
+        animationView.force = CGFloat.random(in: 0.1...2.5)
+        animationView.duration = CGFloat.random(in: 0.1...3.5)
         animationView.animate()
         
         nextAnimation =
