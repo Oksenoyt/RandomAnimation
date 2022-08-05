@@ -12,9 +12,9 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var animationView: SpringView!
     @IBOutlet weak var descriptionLabel: UILabel!
-    
     @IBOutlet weak var nextAnimationButton: UIButton!
     
+    private var nextAnimation = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,8 +22,6 @@ class ViewController: UIViewController {
         animationView.layer.cornerRadius = 15
         nextAnimationButton.layer.cornerRadius = 15
     }
-    
-    private var nextAnimation = ""
     
     @IBAction func nextAnimation(_ sender: UIButton) {
         
