@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -30,45 +29,54 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XMp-hC-l6r" customClass="SpringView" customModule="SpringAnimation">
-                                <rect key="frame" x="50" y="110" width="314" height="128"/>
+                                <rect key="frame" x="50" y="123" width="314" height="128"/>
                                 <color key="backgroundColor" red="0.19215686274509802" green="0.3529411764705882" blue="0.74117647058823533" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="XMp-hC-l6r" secondAttribute="height" multiplier="157:64" id="lQg-ce-6C8"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ot9-Im-5Go">
-                                <rect key="frame" x="50" y="707" width="314" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="next animation:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ot9-Im-5Go">
+                                <rect key="frame" x="50" y="718.5" width="314" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.19215686269999999" green="0.35294117650000001" blue="0.74117647060000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="options animation:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xwh-PL-jfw">
-                                <rect key="frame" x="50" y="285.5" width="314" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="animation options:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xwh-PL-jfw">
+                                <rect key="frame" x="50" y="301.5" width="314" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.19215686269999999" green="0.35294117650000001" blue="0.74117647060000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Сhoose animation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NSH-dl-Exv">
+                                <rect key="frame" x="172" y="59" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="0.19215686269999999" green="0.35294117650000001" blue="0.74117647060000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.99747651815414429" green="0.9721422831908979" blue="0.71745099211164132" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="XMp-hC-l6r" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="64J-l1-zwI"/>
                             <constraint firstItem="n33-eV-zg5" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="7uZ-X8-H4J"/>
-                            <constraint firstItem="n33-eV-zg5" firstAttribute="top" secondItem="ot9-Im-5Go" secondAttribute="bottom" multiplier="1.03" id="9W5-NA-eBa"/>
+                            <constraint firstItem="n33-eV-zg5" firstAttribute="top" secondItem="ot9-Im-5Go" secondAttribute="bottom" constant="10" id="9W5-NA-eBa"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="n33-eV-zg5" secondAttribute="bottom" multiplier="1.1" id="CBf-qN-Hq1"/>
                             <constraint firstItem="Xwh-PL-jfw" firstAttribute="top" secondItem="XMp-hC-l6r" secondAttribute="bottom" multiplier="1.2" id="IUw-cJ-8Mo"/>
+                            <constraint firstItem="XMp-hC-l6r" firstAttribute="top" secondItem="NSH-dl-Exv" secondAttribute="bottom" constant="20" id="JUF-Ou-8Pr"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ot9-Im-5Go" secondAttribute="trailing" constant="50" id="KeX-jb-hpQ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XMp-hC-l6r" secondAttribute="trailing" constant="50" id="RmC-3F-yif"/>
                             <constraint firstItem="ot9-Im-5Go" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="Ups-4q-LWh"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Xwh-PL-jfw" secondAttribute="trailing" constant="50" id="WPO-ls-Oxd"/>
                             <constraint firstItem="Xwh-PL-jfw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="kbe-e7-yM5"/>
-                            <constraint firstItem="XMp-hC-l6r" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" multiplier="2.5" id="qLh-SN-1zh"/>
+                            <constraint firstItem="NSH-dl-Exv" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="nha-YZ-s7t"/>
+                            <constraint firstItem="XMp-hC-l6r" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" multiplier="2.8" id="qLh-SN-1zh"/>
                             <constraint firstItem="n33-eV-zg5" firstAttribute="width" secondItem="XMp-hC-l6r" secondAttribute="width" id="wHH-Lq-CJE"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="animationView" destination="XMp-hC-l6r" id="i6E-cK-lgy"/>
                         <outlet property="descriptionLabel" destination="Xwh-PL-jfw" id="PqV-kE-81f"/>
+                        <outlet property="nextAnimationButton" destination="n33-eV-zg5" id="ROH-BI-oQn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -76,9 +84,4 @@
             <point key="canvasLocation" x="18.840579710144929" y="97.767857142857139"/>
         </scene>
     </scenes>
-    <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-    </resources>
 </document>
